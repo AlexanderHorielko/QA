@@ -15,9 +15,11 @@ namespace PetClinicTestProject
     public class EditOwnerTest : TestBase
     {
         [Test]
+        [TestCase("1234567890")]
+        [TestCase("9999999999")]
         [AllureSuite("Check edit owners functionality")]
 
-        public void editOwner()
+        public void editOwner(string phone)
         {
             pages.Navigation.OwnerTab.Click();
             {
@@ -43,7 +45,7 @@ namespace PetClinicTestProject
 
             Helpers.ClearAndType(pages.EditOwner.firstName, ownerName);
             Helpers.ClearAndType(pages.EditOwner.lastName, ownerSurname);
-            Helpers.ClearAndType(pages.EditOwner.phoneField, phoneNumber);
+            Helpers.ClearAndType(pages.EditOwner.phoneField, phone);
             
             pages.EditOwner.updateOwnerButton.Click();
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".ownerPhone")));

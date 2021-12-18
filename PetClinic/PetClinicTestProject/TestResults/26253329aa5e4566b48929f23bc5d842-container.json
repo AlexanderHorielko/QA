@@ -1,0 +1,44 @@
+{
+  "uuid": "5cffe3b7-beb6-4739-98ec-ef37714ae358-tc-0-1000",
+  "name": "PetClinicTestProject.AddnewpettypeTest.addnewpettype(\"some pet\")",
+  "children": [
+    "0e5f1b7d-700d-4e3f-ae98-f01ccf436a1d-tr-0-1002"
+  ],
+  "befores": [
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1639853197295,
+      "stop": 1639853197295
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1639853197295,
+      "stop": 1639853197295
+    }
+  ],
+  "links": [],
+  "start": 1639853172464,
+  "stop": 1639853197299
+}

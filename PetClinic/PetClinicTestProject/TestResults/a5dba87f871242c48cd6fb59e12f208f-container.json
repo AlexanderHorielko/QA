@@ -1,0 +1,44 @@
+{
+  "uuid": "bb5a0e9c-9824-4d48-97f2-5a8da49c1c48-tc-0-1004",
+  "name": "PetClinicTestProject.EditOwnerTest.editOwner(\"9999999999\")",
+  "children": [
+    "9531ff19-e94f-4b6a-9b40-7d99e32f1e6d-tr-0-1006"
+  ],
+  "befores": [
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1639853051014,
+      "stop": 1639853051014
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1639853051015,
+      "stop": 1639853051015
+    }
+  ],
+  "links": [],
+  "start": 1639853021677,
+  "stop": 1639853051017
+}

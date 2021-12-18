@@ -1,0 +1,93 @@
+{
+  "uuid": "be2afe37-b210-44f6-b16f-c7b1d8e15677-tr-0-1002",
+  "historyId": "PetClinicTestProject.AddnewpettypeTest.addnewpettype(\"some pet\")",
+  "fullName": "PetClinicTestProject.AddnewpettypeTest.addnewpettype(\"some pet\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "addnewpettype"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check add new pet type functionality"
+    }
+  ],
+  "links": [],
+  "name": "addnewpettype(\"some pet\")",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : unknown error: Chrome failed to start: crashed.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)\n   at PetClinicTestProject.Hooks.ChooseBrowser(BrowserType browser) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 57\n   at PetClinicTestProject.Hooks.SetUp() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 37\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+  },
+  "stage": "finished",
+  "description": "\nSetUp SetUp method failed\n\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "addnewpettype(\"some pet\") skipped because of SetUp failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : unknown error: Chrome failed to start: crashed.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)\n   at PetClinicTestProject.Hooks.ChooseBrowser(BrowserType browser) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 57\n   at PetClinicTestProject.Hooks.SetUp() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 37\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639854861669,
+          "stop": 1639854861715
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c9775c5bb7ac408bad0189d64ba4a49e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639854861666,
+      "stop": 1639854866857
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "some pet"
+    }
+  ],
+  "start": 1639854861665,
+  "stop": 1639854866860
+}

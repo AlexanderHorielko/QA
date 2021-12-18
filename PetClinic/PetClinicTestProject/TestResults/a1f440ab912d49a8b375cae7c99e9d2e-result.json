@@ -1,0 +1,88 @@
+{
+  "uuid": "80cd4c6b-3a80-4703-b118-146fc10672b7-tr-0-1001",
+  "historyId": "PetClinicTestProject.AddnewpettypeTest.addnewpettype",
+  "fullName": "PetClinicTestProject.AddnewpettypeTest.addnewpettype",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "addnewpettype"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check add new pet type functionality"
+    }
+  ],
+  "links": [],
+  "name": "addnewpettype",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver. (SessionNotCreated)\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariDriverService service, SafariOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariDriverService service, SafariOptions options)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariOptions options)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor()\n   at PetClinicTestProject.Hooks.ChooseBrowser(BrowserType browser) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 69\n   at PetClinicTestProject.Hooks.SetUp() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 37\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+  },
+  "stage": "finished",
+  "description": "\nSetUp SetUp method failed\n\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "addnewpettype skipped because of SetUp failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver. (SessionNotCreated)\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariDriverService service, SafariOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariDriverService service, SafariOptions options)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor(SafariOptions options)\n   at OpenQA.Selenium.Safari.SafariDriver..ctor()\n   at PetClinicTestProject.Hooks.ChooseBrowser(BrowserType browser) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 69\n   at PetClinicTestProject.Hooks.SetUp() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/Hooks.cs:line 37\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639854613523,
+          "stop": 1639854613642
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5ad5bfe45d454f9db0e35670de1d2ca6-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639854613515,
+      "stop": 1639854615171
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1639854613513,
+  "stop": 1639854615187
+}

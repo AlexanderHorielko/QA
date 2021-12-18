@@ -1,0 +1,157 @@
+{
+  "uuid": "4ace078c-a857-446e-9883-8406279d2412-tr-0-1005",
+  "historyId": "PetClinicTestProject.EditOwnerTest.editOwner(\"1234567890\")",
+  "fullName": "PetClinicTestProject.EditOwnerTest.editOwner(\"1234567890\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.EditOwnerTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "editOwner"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.EditOwnerTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check edit owners functionality"
+    }
+  ],
+  "links": [],
+  "name": "editOwner(\"1234567890\")",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  String lengths are both 10. Strings differ at index 1.\n  Expected: \"1616374116\"\n  But was:  \"1234567890\"\n  ------------^\n",
+    "trace": "   at PetClinicTestProject.EditOwnerTest.editOwner(String phone) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/EditOwnerTest.cs:line 53\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "editOwner(\"1234567890\")",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  String lengths are both 10. Strings differ at index 1.\n  Expected: \"1616374116\"\n  But was:  \"1234567890\"\n  ------------^\n",
+        "trace": "   at PetClinicTestProject.EditOwnerTest.editOwner(String phone) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/EditOwnerTest.cs:line 53\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639852991436,
+          "stop": 1639852991489
+        },
+        {
+          "name": "Scroll to bottom of page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853016942,
+          "stop": 1639853017391
+        },
+        {
+          "name": "Clear input and type a new value",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853020402,
+          "stop": 1639853020601
+        },
+        {
+          "name": "Clear input and type a new value",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853020608,
+          "stop": 1639853020701
+        },
+        {
+          "name": "Clear input and type a new value",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853020710,
+          "stop": 1639853020775
+        }
+      ],
+      "attachments": [
+        {
+          "name": "editOwner_screenshot_637754570215878850.png",
+          "source": "0dc08fbf623e41d98e6dfe924f5f2a97-attachment.png",
+          "type": "image/png"
+        },
+        {
+          "name": "Console Output",
+          "source": "aef3725577c04caf893553b1bef42a2c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639852991436,
+      "stop": 1639853021668
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "1234567890"
+    }
+  ],
+  "start": 1639852991435,
+  "stop": 1639853021670
+}

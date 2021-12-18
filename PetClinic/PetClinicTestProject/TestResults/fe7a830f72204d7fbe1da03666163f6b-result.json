@@ -1,0 +1,77 @@
+{
+  "uuid": "1fcbb049-025d-4a2c-8fad-f4e0f3f4e40a-tr-0-1007",
+  "historyId": "PetClinicTestProject.EditOwnerTest.editOwner(\"1234567890\")",
+  "fullName": "PetClinicTestProject.EditOwnerTest.editOwner(\"1234567890\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.EditOwnerTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "editOwner"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.EditOwnerTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check edit owners functionality"
+    }
+  ],
+  "links": [],
+  "name": "editOwner(\"1234567890\")",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at PetClinicTestProject.EditOwnerTest.editOwner(String phone) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/EditOwnerTest.cs:line 24\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+  },
+  "stage": "finished",
+  "description": "\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "editOwner(\"1234567890\")",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at PetClinicTestProject.EditOwnerTest.editOwner(String phone) in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/EditOwnerTest.cs:line 24\n--TearDown\n   at PetClinicTestProject.TestBase.TearDown() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestBase.cs:line 60"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ba390e0dccd0409ea3e4458247056a33-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639854853734,
+      "stop": 1639854853797
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "1234567890"
+    }
+  ],
+  "start": 1639854853733,
+  "stop": 1639854853802
+}

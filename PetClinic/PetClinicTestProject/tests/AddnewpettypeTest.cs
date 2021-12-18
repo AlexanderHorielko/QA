@@ -9,11 +9,16 @@ using NUnit.Allure.Attributes;
 
 namespace PetClinicTestProject
 {
-    public class AddnewpettypeTest : TestBase
+    [TestFixture]
+    [Parallelizable]
+    public class AddnewpettypeTest : Hooks
     {
+        public AddnewpettypeTest(): base(BrowserType.Firefox) {}
         [Test]
+        [TestCase("new pet")]
+        [TestCase("some pet")]
         [AllureSuite("Check add new pet type functionality")]
-        public void addnewpettype()
+        public void addnewpettype(string petName)
         {
             driver.FindElement(By.CssSelector("li:nth-child(4) > a")).Click();
             Helpers.ScrollToBottom(driver, "li:nth-child(4) > a");
@@ -27,7 +32,7 @@ namespace PetClinicTestProject
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".addPet")));
             pages.AddNewPetType.addPetButton.Click();
             Helpers.ScrollToBottom(driver, ".addPet");
-            pages.AddNewPetType.changeNameAndSave(pages.AddNewPetType.petTypeNameField, newName);
+            pages.AddNewPetType.changeNameAndSave(pages.AddNewPetType.petTypeNameField, petName);
             Assert.That(driver.FindElement(By.CssSelector("tr:nth-last-child(1) > td > input")).GetAttribute("ng-reflect-model"), Is.EqualTo(newName));
         }
     }

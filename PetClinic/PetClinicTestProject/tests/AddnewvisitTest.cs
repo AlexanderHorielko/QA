@@ -10,8 +10,11 @@ using NUnit.Allure.Attributes;
 
 namespace PetClinicTestProject
 {
-    public class AddnewvisitTest : TestBase
+    [TestFixture]
+    [Parallelizable]
+    public class AddnewvisitTest : Hooks
     {
+        public AddnewvisitTest() : base(BrowserType.Chrome) {}
         [Test]
         [AllureSuite("Check add new visit functionality")]
         public void addnewvisit()

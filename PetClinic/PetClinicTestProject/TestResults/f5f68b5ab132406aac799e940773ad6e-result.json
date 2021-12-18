@@ -1,0 +1,107 @@
+{
+  "uuid": "deb57bb3-5c7d-4f49-a352-043325fa1a33-tr-0-1003",
+  "historyId": "PetClinicTestProject.AddnewvisitTest.addnewvisit",
+  "fullName": "PetClinicTestProject.AddnewvisitTest.addnewvisit",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.AddnewvisitTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "addnewvisit"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.AddnewvisitTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check add new visit functionality"
+    }
+  ],
+  "links": [],
+  "name": "addnewvisit",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".addNewVisit\"}\n  (Session info: chrome=96.0.4664.110)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at PetClinicTestProject.AddnewvisitTest.addnewvisit() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/AddnewvisitTest.cs:line 26"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "addnewvisit",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".addNewVisit\"}\n  (Session info: chrome=96.0.4664.110)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at PetClinicTestProject.AddnewvisitTest.addnewvisit() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/AddnewvisitTest.cs:line 26"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639854466476,
+          "stop": 1639854466592
+        },
+        {
+          "name": "Wait for element to be shown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639854511672,
+          "stop": 1639854521984
+        }
+      ],
+      "attachments": [
+        {
+          "name": "addnewvisit_screenshot_637754585252447480.png",
+          "source": "6a79ed4278744d23ac18baa07f1e3be2-attachment.png",
+          "type": "image/png"
+        },
+        {
+          "name": "Console Output",
+          "source": "8b74cc2b251d45168b13f9bca44b8786-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639854466462,
+      "stop": 1639854525328
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1639854466460,
+  "stop": 1639854525328
+}

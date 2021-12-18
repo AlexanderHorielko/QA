@@ -1,0 +1,119 @@
+{
+  "uuid": "152f662c-b62b-404a-8e4d-b8913c463a63-tr-0-1001",
+  "historyId": "PetClinicTestProject.AddnewpettypeTest.addnewpettype(\"new pet\")",
+  "fullName": "PetClinicTestProject.AddnewpettypeTest.addnewpettype(\"new pet\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "addnewpettype"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check add new pet type functionality"
+    }
+  ],
+  "links": [],
+  "name": "addnewpettype(\"new pet\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "addnewpettype(\"new pet\")"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "addnewpettype(\"new pet\")",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853213696,
+          "stop": 1639853213793
+        },
+        {
+          "name": "Scroll to bottom of page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853234263,
+          "stop": 1639853239218
+        },
+        {
+          "name": "Scroll to bottom of page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639853241254,
+          "stop": 1639853242706
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c42976bce3ba4b6eb73033dffd8257cb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639853213689,
+      "stop": 1639853243589
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Param #0",
+      "value": "new pet"
+    }
+  ],
+  "start": 1639853213687,
+  "stop": 1639853243595
+}

@@ -32,26 +32,6 @@ namespace PetClinicTestProject
         public VisitSection Visits { get; set; }
         public NewPetTypeSection PetTypes { get; set; }
 
-
-        [SetUp]
-        public void SetUp()
-        {
-            GetTestData();
-            // driver = new ChromeDriver();
-
-            Dictionary<string, object> additionalSelenoidCapabilities = new Dictionary<string, object>();            additionalSelenoidCapabilities["name"] = "Pi-59(1) lab 6 variant 6";            
-            additionalSelenoidCapabilities["enableVNC"] = true;
-            var chrome_options = new ChromeOptions();                    
-            chrome_options.AddAdditionalOption("selenoid:options", additionalSelenoidCapabilities);
-            driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), chrome_options.ToCapabilities());
-
-            js = (IJavaScriptExecutor)driver;
-            vars = new Dictionary<string, object>();
-            BaseUrl = "http://20.50.171.10:8080";
-            driver.Navigate().GoToUrl(BaseUrl);
-            driver.Manage().Window.Size = new System.Drawing.Size(1440, 817);
-            pages = new Pages(driver);
-        }
         [TearDown]
         protected void TearDown()
         {
