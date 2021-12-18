@@ -74,6 +74,14 @@
               "target": "Package",
               "version": "[3.13.2, )"
             },
+            "NUnit.Allure": {
+              "target": "Package",
+              "version": "[1.0.14, )"
+            },
+            "NUnit.Allure.Steps": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.0.0, )"

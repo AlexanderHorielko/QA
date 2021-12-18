@@ -2,6 +2,38 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Allure.Commons/3.5.0.4": {
+        "type": "package",
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "AspectInjector/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/AspectInjector.targets": {}
+        }
+      },
       "coverlet.collector/1.3.0": {
         "type": "package",
         "build": {
@@ -433,6 +465,15 @@
           "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "MimeTypesMap/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        }
+      },
       "MSTest.TestAdapter/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -500,6 +541,32 @@
         },
         "build": {
           "build/NUnit.props": {}
+        }
+      },
+      "NUnit.Allure/1.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Allure.Commons": "3.5.0.4",
+          "NUnit": "3.13.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NUnit.Allure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NUnit.Allure.dll": {}
+        }
+      },
+      "NUnit.Allure.Steps/1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "AspectInjector": "2.3.1",
+          "NUnit.Allure": "1.0.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/NUnit.Allure.Steps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NUnit.Allure.Steps.dll": {}
         }
       },
       "NUnit3TestAdapter/4.0.0": {
@@ -731,6 +798,58 @@
     }
   },
   "libraries": {
+    "Allure.Commons/3.5.0.4": {
+      "sha512": "Z70v7jcxDypsHMnAvnbs1eTw0kdi4Uv6o0Z5gSGgqrH6ZZz6M/mB9IjQn6vE9B2ZWwT21mc38XtAdTl17faFNg==",
+      "type": "package",
+      "path": "allure.commons/3.5.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-net.png",
+        "allure.commons.3.5.0.4.nupkg.sha512",
+        "allure.commons.nuspec",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net45/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net45/Allure.Commons.dll",
+        "lib/netstandard2.0/Allure.Commons.dll"
+      ]
+    },
+    "AspectInjector/2.3.1": {
+      "sha512": "FcuYWQDN7YdDOQ4YQKHvGAUuSYcu/0m+dwjFsuC9TqSfVbL8Er6fja11cctkCmjjDD7oD6j5zexa5PWRG8XAlQ==",
+      "type": "package",
+      "path": "aspectinjector/2.3.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AspectInjector.Analyzer.dll",
+        "analyzers/dotnet/cs/AspectInjector.Broker.dll",
+        "analyzers/dotnet/cs/AspectInjector.Rules.dll",
+        "analyzers/dotnet/cs/FluentIL.Common.dll",
+        "aspectinjector.2.3.1.nupkg.sha512",
+        "aspectinjector.nuspec",
+        "build/_bin/AspectInjector.Broker.dll",
+        "build/_bin/AspectInjector.Core.Advice.dll",
+        "build/_bin/AspectInjector.Core.Mixin.dll",
+        "build/_bin/AspectInjector.Core.dll",
+        "build/_bin/AspectInjector.Rules.dll",
+        "build/_bin/AspectInjector.dll",
+        "build/_bin/AspectInjector.runtimeconfig.json",
+        "build/_bin/FluentIL.Common.dll",
+        "build/_bin/FluentIL.dll",
+        "build/_bin/Mono.Cecil.Mdb.dll",
+        "build/_bin/Mono.Cecil.Pdb.dll",
+        "build/_bin/Mono.Cecil.Rocks.dll",
+        "build/_bin/Mono.Cecil.dll",
+        "build/netstandard2.0/AspectInjector.targets",
+        "buildTransitive/netstandard2.0/AspectInjector.targets",
+        "lib/netstandard2.0/AspectInjector.Broker.dll",
+        "lib/netstandard2.0/AspectInjector.Broker.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "coverlet.collector/1.3.0": {
       "sha512": "t8pnf5SX2ya0RX4vjoxsbhDMQCZJcpPun2neHKJ4FouMmObylo25FvoOydvf3Bl+l+IzWw7u2vjEeCBHnleB9g==",
       "type": "package",
@@ -1300,6 +1419,20 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "MimeTypesMap/1.0.8": {
+      "sha512": "iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "type": "package",
+      "path": "mimetypesmap/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypesMap.dll",
+        "lib/netstandard1.1/MimeTypesMap.dll",
+        "lib/netstandard2.0/MimeTypesMap.dll",
+        "mimetypesmap.1.0.8.nupkg.sha512",
+        "mimetypesmap.nuspec"
+      ]
+    },
     "MSTest.TestAdapter/2.1.1": {
       "sha512": "913cbQHPnGOCCYJKPDqcjI1IbPkugHOiheuSmd5m4LKLdXJbKJX1AxUu7F7uAMxCNdtLA34ZOgFe5WNDcWhY2Q==",
       "type": "package",
@@ -1663,6 +1796,33 @@
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.13.2.nupkg.sha512",
         "nunit.nuspec"
+      ]
+    },
+    "NUnit.Allure/1.0.14": {
+      "sha512": "jrNs38+EM1LdLOr8AM8uld0DWCM85nsBwU8zUMqS59p+QpxeljDsmocHcXWuM1/hUE1WSZTW9Jx3yq3iv5eewQ==",
+      "type": "package",
+      "path": "nunit.allure/1.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/netstandard2.0/NUnit.Allure.dll",
+        "logo.png",
+        "nunit.allure.1.0.14.nupkg.sha512",
+        "nunit.allure.nuspec"
+      ]
+    },
+    "NUnit.Allure.Steps/1.0.9": {
+      "sha512": "suPMipzg/OzvdNJhGaCE8eGpWL3T3f1p5OctOt4SITOTYAEaaCgzuctUiW26O4C75IAHDsG5QUblTKMZIIqniA==",
+      "type": "package",
+      "path": "nunit.allure.steps/1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/NUnit.Allure.Steps.dll",
+        "nunit.allure.steps.1.0.9.nupkg.sha512",
+        "nunit.allure.steps.nuspec"
       ]
     },
     "NUnit3TestAdapter/4.0.0": {
@@ -2694,6 +2854,8 @@
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "NUnit >= 3.13.2",
+      "NUnit.Allure >= 1.0.14",
+      "NUnit.Allure.Steps >= 1.0.9",
       "NUnit3TestAdapter >= 4.0.0",
       "Selenium.Support >= 4.0.0-beta4",
       "Selenium.WebDriver >= 4.0.0-beta4",
@@ -2772,6 +2934,14 @@
           "NUnit": {
             "target": "Package",
             "version": "[3.13.2, )"
+          },
+          "NUnit.Allure": {
+            "target": "Package",
+            "version": "[1.0.14, )"
+          },
+          "NUnit.Allure.Steps": {
+            "target": "Package",
+            "version": "[1.0.9, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",

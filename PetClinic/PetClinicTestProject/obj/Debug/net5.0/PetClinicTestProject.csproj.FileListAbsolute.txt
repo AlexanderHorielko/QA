@@ -116,3 +116,8 @@
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Physical.dll
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Allure.Commons.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/AspectInjector.Broker.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/MimeTypesMap.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/NUnit.Allure.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/NUnit.Allure.Steps.dll

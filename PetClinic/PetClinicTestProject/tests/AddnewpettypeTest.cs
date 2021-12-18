@@ -5,12 +5,14 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 using SeleniumExtras.WaitHelpers;
+using NUnit.Allure.Attributes;
 
 namespace PetClinicTestProject
 {
     public class AddnewpettypeTest : TestBase
     {
         [Test]
+        [AllureSuite("Check add new pet type functionality")]
         public void addnewpettype()
         {
             driver.FindElement(By.CssSelector("li:nth-child(4) > a")).Click();

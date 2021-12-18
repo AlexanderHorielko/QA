@@ -1,0 +1,122 @@
+{
+  "uuid": "fabc68e0-9985-4ffd-8a21-ebea903cb9ec-tr-0-1001",
+  "historyId": "PetClinicTestProject.AddnewpettypeTest.addnewpettype",
+  "fullName": "PetClinicTestProject.AddnewpettypeTest.addnewpettype",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "MacBook-Air-Alexander"
+    },
+    {
+      "name": "testClass",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "addnewpettype"
+    },
+    {
+      "name": "package",
+      "value": "PetClinicTestProject.AddnewpettypeTest"
+    },
+    {
+      "name": "suite",
+      "value": "Check add new pet type functionality"
+    }
+  ],
+  "links": [],
+  "name": "addnewpettype",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 13 but was 4. Strings differ at index 0.\n  Expected: \"Some pet type\"\n  But was:  \"Fish\"\n  -----------^\n",
+    "trace": "   at PetClinicTestProject.AddnewpettypeTest.addnewpettype() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/AddnewpettypeTest.cs:line 31\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "addnewpettype",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 13 but was 4. Strings differ at index 0.\n  Expected: \"Some pet type\"\n  But was:  \"Fish\"\n  -----------^\n",
+        "trace": "   at PetClinicTestProject.AddnewpettypeTest.addnewpettype() in /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/tests/AddnewpettypeTest.cs:line 31\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Retrieve test data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639850069412,
+          "stop": 1639850069513
+        },
+        {
+          "name": "Scroll to bottom of page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639850110424,
+          "stop": 1639850110770
+        },
+        {
+          "name": "Scroll to bottom of page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1639850112481,
+          "stop": 1639850112784
+        }
+      ],
+      "attachments": [
+        {
+          "name": "addnewpettype_screenshot_637754541136843700.png",
+          "source": "99743c76f04e434699ba91282095ad78-attachment.png",
+          "type": "image/png"
+        },
+        {
+          "name": "Console Output",
+          "source": "78e1a1f7e325469e9a2ab5852085da4e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639850069399,
+      "stop": 1639850113785
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1639850069397,
+  "stop": 1639850113790
+}

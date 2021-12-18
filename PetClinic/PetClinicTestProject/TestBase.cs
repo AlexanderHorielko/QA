@@ -8,9 +8,15 @@ using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 using SeleniumExtras.WaitHelpers;
 using Microsoft.Extensions.Configuration;
+using NUnit.Framework.Interfaces;
+using Allure.Commons;
+using NUnit.Allure.Core;
+using NUnit.Allure.Steps;
+using OpenQA.Selenium.Remote;
 
 namespace PetClinicTestProject
 {
+    [AllureNUnit]
     public class TestBase
     {
         protected IWebDriver driver;
@@ -21,7 +27,7 @@ namespace PetClinicTestProject
 
         public Pages pages { get; set; }
 
-        protected IConfiguration Configuration{ get; set; }
+        protected IConfiguration Configuration { get; set; }
         public OwnersSection Owners { get; set; }
         public VisitSection Visits { get; set; }
         public NewPetTypeSection PetTypes { get; set; }
@@ -31,7 +37,14 @@ namespace PetClinicTestProject
         public void SetUp()
         {
             GetTestData();
-            driver = new ChromeDriver();
+            // driver = new ChromeDriver();
+
+            Dictionary<string, object> additionalSelenoidCapabilities = new Dictionary<string, object>();            additionalSelenoidCapabilities["name"] = "Pi-59(1) lab 6 variant 6";            
+            additionalSelenoidCapabilities["enableVNC"] = true;
+            var chrome_options = new ChromeOptions();                    
+            chrome_options.AddAdditionalOption("selenoid:options", additionalSelenoidCapabilities);
+            driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), chrome_options.ToCapabilities());
+
             js = (IJavaScriptExecutor)driver;
             vars = new Dictionary<string, object>();
             BaseUrl = "http://20.50.171.10:8080";
@@ -42,22 +55,27 @@ namespace PetClinicTestProject
         [TearDown]
         protected void TearDown()
         {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+                var filename = TestContext.CurrentContext.Test.MethodName + "_screenshot_" + DateTime.Now.Ticks + ".png";
+                var path = $"/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestResults/{filename}";
+                screenshot.SaveAsFile(path, ScreenshotImageFormat.Png);
+                AllureLifecycle.Instance.AddAttachment(filename, "image/png", path);
+            }
             driver.Quit();
         }
 
+        [AllureStep("Retrieve test data")]
         protected void GetTestData() {
-            Configuration = new ConfigurationBuilder()
-            .SetBasePath("/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestDataConfiguration")
-            .AddJsonFile("TestData.json", optional: false, reloadOnChange: true)
-            .Build();
+                Configuration = new ConfigurationBuilder()
+                .SetBasePath("/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestDataConfiguration")
+                .AddJsonFile("TestData.json", optional: false, reloadOnChange: true)
+                .Build();
 
-            Owners = new OwnersSection(Configuration);
-            Visits = new VisitSection(Configuration);
-            PetTypes = new NewPetTypeSection(Configuration);
-
-            // Configuration.GetSection("owners").Bind(Owners);
-            // Configuration.GetSection("visits").Bind(Visits);
-            // Configuration.GetSection("petTypes").Bind(PetTypes);
+                Owners = new OwnersSection(Configuration);
+                Visits = new VisitSection(Configuration);
+                PetTypes = new NewPetTypeSection(Configuration);
         }
     }
 }
