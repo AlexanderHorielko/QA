@@ -10,15 +10,12 @@ using SeleniumExtras.WaitHelpers;
 
 namespace PetClinicTestProject
 {
-    public static class EditOwnerPage
+    public class EditOwnerPage: BasePage
     {
-        public static IWebElement phoneField => TestBase.driver.FindElement(By.Id("telephone"));
-        public static IWebElement updateOwnerButton => TestBase.driver.FindElement(By.CssSelector(".updateOwner"));
-
-        public static void ClearAndType(IWebElement element, string text){
-            element.Click();
-            element.SendKeys(text);
-        }
-
+        public EditOwnerPage(IWebDriver driver) : base(driver) {}
+        public IWebElement phoneField => driver.FindElement(By.Id("telephone"));
+        public IWebElement firstName => driver.FindElement(By.Id("firstName"));
+        public IWebElement lastName => driver.FindElement(By.Id("lastName"));
+        public IWebElement updateOwnerButton => driver.FindElement(By.CssSelector(".updateOwner"));
     }
 }

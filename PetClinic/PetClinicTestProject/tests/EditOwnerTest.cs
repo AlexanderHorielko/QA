@@ -16,7 +16,7 @@
 //         [Test]
 //         public void editOwner()
 //         {
-//             driver.FindElement(By.CssSelector(".ownerTab")).Click();
+//             pages.Navigation.OwnerTab.Click();
 //             {
 //                 var element = driver.FindElement(By.CssSelector(".open li:nth-child(2) span:nth-child(2)"));
 //                 Actions builder = new Actions(driver);
@@ -27,20 +27,24 @@
 //                 Actions builder = new Actions(driver);
 //                 builder.MoveToElement(element, 0, 0).Perform();
 //             }
-//             driver.FindElement(By.CssSelector(".open li:nth-child(1) > a")).Click();
+//             pages.Navigation.OwnerListLink.Click();
 //             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 //             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".petOwner:nth-child(66) a")));
-//             {
-//                 var element = driver.FindElement(By.CssSelector(".petOwner:nth-child(66) a"));
-//                 Actions builder = new Actions(driver);
-//                 builder.MoveToElement(element, 0, 0).Perform();
-//             }
+//             Helpers.ScrollToBottom(driver, ".petOwner:nth-child(66) a");
 //             driver.FindElement(By.CssSelector(".petOwner:nth-child(66) a")).Click();
 //             driver.FindElement(By.CssSelector(".editOwner")).Click();
-//             EditOwnerPage.ClearAndType(EditOwnerPage.phoneField, "1241241241");
-//             EditOwnerPage.updateOwnerButton.Click();
+
+//             var phoneNumber = Faker.RandomNumber.Next(1000000000, 9999999999).ToString();
+//             var ownerName = Owners.OwnerList[0].Name;
+//             var ownerSurname = Owners.OwnerList[0].Surname;
+
+//             Helpers.ClearAndType(pages.EditOwner.firstName, ownerName);
+//             Helpers.ClearAndType(pages.EditOwner.lastName, ownerSurname);
+//             Helpers.ClearAndType(pages.EditOwner.phoneField, phoneNumber);
+            
+//             pages.EditOwner.updateOwnerButton.Click();
 //             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".ownerPhone")));
-//             Assert.That(driver.FindElement(By.CssSelector(".ownerPhone")).Text, Is.EqualTo("1241241241"));
+//             Assert.That(driver.FindElement(By.CssSelector(".ownerPhone")).Text, Is.EqualTo(phoneNumber));
 //         }
 //     }
 // }

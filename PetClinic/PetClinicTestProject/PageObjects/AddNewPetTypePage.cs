@@ -10,16 +10,17 @@ using SeleniumExtras.WaitHelpers;
 
 namespace PetClinicTestProject
 {
-    public static class AddNewPetTypePage
+    public class AddNewPetTypePage: BasePage
     {
-        public static IWebElement addPetButton => TestBase.driver.FindElement(By.CssSelector(".addPet"));
-        public static IWebElement petTypeNameField => TestBase.driver.FindElement(By.Id("name"));
+        public AddNewPetTypePage(IWebDriver driver) : base(driver) {}
 
-        public static void changeNameAndSave(IWebElement element, string text){
+        public IWebElement addPetButton => driver.FindElement(By.CssSelector(".addPet"));
+        public IWebElement petTypeNameField => driver.FindElement(By.Id("name"));
+
+        public void changeNameAndSave(IWebElement element, string text){
             element.Click();
             element.SendKeys(text);
-            TestBase.driver.FindElement(By.CssSelector(".saveType")).Click();
+            driver.FindElement(By.CssSelector(".saveType")).Click();
         }
-
     }
 }

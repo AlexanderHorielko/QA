@@ -10,14 +10,18 @@ using SeleniumExtras.WaitHelpers;
 
 namespace PetClinicTestProject
 {
-    public static class AddNewVisitPage
+    public class AddNewVisitPage: Pages
     {
-        public static IWebElement descriptionField => TestBase.driver.FindElement(By.Id("description"));
+        public AddNewVisitPage(IWebDriver driver) : base(driver) {}
+        public IWebElement descriptionField => driver.FindElement(By.Id("description"));
+        public IWebElement date => driver.FindElement(By.Name("date"));
 
-        public static void chooseDate(){
-            TestBase.driver.FindElement(By.Name("date")).Click();
-            TestBase.driver.FindElement(By.CssSelector("path")).Click();
-            TestBase.driver.FindElement(By.CssSelector(".ng-star-inserted:nth-child(3) > .mat-calendar-body-cell:nth-child(3) > .mat-calendar-body-cell-content")).Click();
+        public void chooseDate(String newDate){
+            date.Click();
+            date.Clear();
+            date.SendKeys(newDate);
+            // driver.FindElement(By.CssSelector("path")).Click();
+            // driver.FindElement(By.CssSelector(".ng-star-inserted:nth-child(3) > .mat-calendar-body-cell:nth-child(3) > .mat-calendar-body-cell-content")).Click();
         }
 
     }

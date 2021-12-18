@@ -7,30 +7,57 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 using SeleniumExtras.WaitHelpers;
+using Microsoft.Extensions.Configuration;
 
 namespace PetClinicTestProject
 {
     public class TestBase
     {
-        public static IWebDriver driver;
+        protected IWebDriver driver;
         public IDictionary<string, object> vars { get; private set; }
         private IJavaScriptExecutor js;
 
         protected string BaseUrl;
+
+        public Pages pages { get; set; }
+
+        protected IConfiguration Configuration{ get; set; }
+        public OwnersSection Owners { get; set; }
+        public VisitSection Visits { get; set; }
+        public NewPetTypeSection PetTypes { get; set; }
+
+
         [SetUp]
         public void SetUp()
         {
+            GetTestData();
             driver = new ChromeDriver();
             js = (IJavaScriptExecutor)driver;
             vars = new Dictionary<string, object>();
             BaseUrl = "http://20.50.171.10:8080";
             driver.Navigate().GoToUrl(BaseUrl);
             driver.Manage().Window.Size = new System.Drawing.Size(1440, 817);
+            pages = new Pages(driver);
         }
         [TearDown]
         protected void TearDown()
         {
             driver.Quit();
+        }
+
+        protected void GetTestData() {
+            Configuration = new ConfigurationBuilder()
+            .SetBasePath("/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/TestDataConfiguration")
+            .AddJsonFile("TestData.json", optional: false, reloadOnChange: true)
+            .Build();
+
+            Owners = new OwnersSection(Configuration);
+            Visits = new VisitSection(Configuration);
+            PetTypes = new NewPetTypeSection(Configuration);
+
+            // Configuration.GetSection("owners").Bind(Owners);
+            // Configuration.GetSection("visits").Bind(Visits);
+            // Configuration.GetSection("petTypes").Bind(PetTypes);
         }
     }
 }

@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "Faker.Net": {
+              "target": "Package",
+              "version": "[1.5.150, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.1.1, )"
@@ -49,6 +53,18 @@
             "MSTest.TestFramework": {
               "target": "Package",
               "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

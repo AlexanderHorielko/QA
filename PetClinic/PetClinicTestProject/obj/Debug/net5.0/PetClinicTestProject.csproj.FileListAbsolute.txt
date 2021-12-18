@@ -105,3 +105,14 @@
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/obj/Debug/net5.0/ref/PetClinicTestProject.dll
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/obj/Debug/net5.0/PetClinicTestProject.pdb
 /Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/obj/Debug/net5.0/PetClinicTestProject.genruntimeconfig.cache
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Faker.Net.5.0.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/de-DE/Faker.Net.5.0.resources.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Configuration.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Json.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/alexander/Documents/university/4course1sem/QA/lab4/PetClinic/PetClinicTestProject/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll

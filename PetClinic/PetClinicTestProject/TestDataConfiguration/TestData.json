@@ -1,0 +1,29 @@
+{
+    "owners": [
+        {
+            "name": "Alex",
+            "surname": "Horielko",
+            "address": "prov. Vokzalniy",
+            "city": "Zhytomyr",
+            "phone": "2345678901"
+        },
+        {
+            "name": "Betty",
+            "surname": "Devis",
+            "address": "Schorsa lane 20",
+            "city": "Zhytomyr",
+            "phone": "2345678901"
+        }
+    ], 
+    "visits": [
+        {
+            "date": "2021/12/08",
+            "description": "New pet visit"
+        }
+    ],
+    "petTypes": [
+        {
+            "name": "Some pet type"
+        }
+    ]
+}
